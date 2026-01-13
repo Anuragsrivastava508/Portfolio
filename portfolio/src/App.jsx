@@ -1,10 +1,18 @@
 
+import Navbar from "./components/Navbar";import Home from "./components/Home";
+import Education from "./components/Education";
+import Projec from "./components/Projec";
+import Contactinfo from "./components/contactinfo";
+
+
 function App() {
   return (
-    <div className="min-h-screen flex items-center justify-center">
-      <h1 className="text-red-600">
-        Tailwind v4 Working
-      </h1>
+    <div>
+     <Navbar/>
+     <Home/>
+    <Education/>
+    <Projec/>
+   < Contactinfo/>
     </div>
   );
 }
