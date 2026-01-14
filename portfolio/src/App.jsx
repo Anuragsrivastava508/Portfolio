@@ -1,8 +1,10 @@
 
-import Navbar from "./components/Navbar";import Home from "./components/Home";
+import Navbar from "./components/Navbar";
+import Home from "./components/Home";
 import Education from "./components/Education";
-import Projec from "./components/Projec";
 import Contactinfo from "./components/contactinfo";
+import Project from "./components/Project";
+
 
 
 function App() {
@@ -11,7 +13,7 @@ function App() {
      <Navbar/>
      <Home/>
     <Education/>
-    <Projec/>
+     <Project/>
    < Contactinfo/>
     </div>
   );
