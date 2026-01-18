@@ -27,7 +27,7 @@ const Contact = () => {
   };
 
   return (
-    <section
+    <div> <section
       id="contact-section"
       className="py-24 bg-gradient-to-br from-white via-gray-50 to-gray-100 dark:from-black dark:via-gray-900 dark:to-gray-800 text-gray-800 dark:text-gray-100 relative overflow-hidden"
     >
@@ -42,7 +42,7 @@ const Contact = () => {
             GET IN TOUCH
           </span>
           <h2 className="text-4xl sm:text-5xl font-bold mb-6">
-            Let's Connect
+            Let's <span  className=" text-blue-500  " >Connect </span> 
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
             Have a question or want to work together? Drop me a message anytime!
@@ -195,6 +195,10 @@ const Contact = () => {
         </div>
       </div>
     </section>
+
+   
+
+    </div>
   );
 };
 
