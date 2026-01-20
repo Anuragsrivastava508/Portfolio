@@ -10,7 +10,7 @@ const Education = () => {
       year: "2023 - 2026",
       gpa: "7.5/10",
       description: "Specialized in Software Development",
-      skills: ["DSA", "Web Dev", "Frontend dev " ,"Backend Dev" ,"MERN" , "Cloud Computing"],
+      skills: ["DSA", "Web Dev", "Frontend dev " , "Backend Dev" , "MERN" , "Cloud Computing"],
       icon: FaGraduationCap
     },
     {
@@ -19,7 +19,7 @@ const Education = () => {
       institution: "BAL BHARITYA ENGLISH SCHOOL",
       year: "2022 - 2023",
       gpa: "6.19%",
-      description: "Physics, Chemistry, Mathematics,English",
+      description: "Physics, Chemistry, Mathematics, English",
       skills: ["Physics", "Chemistry", "Mathematics"],
       icon: FaBook
     },
@@ -30,7 +30,8 @@ const Education = () => {
       year: "2020 - 2021",
       gpa: "7.35%",
       description: "Physics, Chemistry, Mathematics,English,Computer",
-      skills: ["Physics", "Chemistry", "Mathematics","English","Computer"],
+      skills: ["Physics", "Chemistry", "Mathematics", "English",
+        "Computer"],
       icon: FaBook
     }
   ]

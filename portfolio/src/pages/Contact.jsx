@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import {
   FaLocationDot,
   FaEnvelope,
@@ -199,7 +200,10 @@ const Contact = () => {
    
 
     </div>
+    
   );
+ 
 };
+
 
 export default Contact;
