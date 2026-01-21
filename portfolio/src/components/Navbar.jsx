@@ -11,7 +11,7 @@ const Navbar = () => {
         {/* Logo */}
         <Link
           to="/"
-          className="text-2xl font-bold text-white cursor-pointer"
+          className="text-2xl font-bold text-white cursor-pointer hover:text-blue-400"
         >
           Anurag Srivastava
         </Link>
