@@ -119,7 +119,7 @@ const Education = () => {
               className="group relative bg-white dark:bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-200 dark:border-gray-700/50 hover:border-blue-500/50 dark:hover:border-blue-400/50 transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/10"
             >
               {/* Corner Accent */}
-              <div className="absolute top-0 right-0 w-1 h-12 bg-gradient-to-b from-blue-500 to-transparent rounded-l" />
+              <div className="absolute top-0 right-0 w-1 h-12 bg-gradient-to-b from-purple-500/20 to-transparent rounded-l" />
 
               <div className="flex items-start gap-4 mb-6">
                 <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-blue-500/20 to-purple-500/20 flex items-center justify-center text-2xl group-hover:scale-110 transition-transform">
