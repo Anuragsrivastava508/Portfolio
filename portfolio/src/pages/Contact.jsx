@@ -57,8 +57,8 @@ const Contact = () => {
             {[
               {
                 icon: <FaLocationDot />,
-                title: "Location",
-                content: "123 Lorem ipsum dolor sit amet, CA 98765432",
+                title: "Varanasi",
+                content: "C 23 / 74 KABIR CHOURA VARNASI UTTAR PARDEH INDIA",
               },
               {
                 icon: <FaEnvelope />,
