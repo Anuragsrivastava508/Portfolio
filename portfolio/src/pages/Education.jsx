@@ -100,13 +100,13 @@ const Education = () => {
       <div className="max-w-7xl mx-auto px-4 relative z-10">
         {/* Header */}
         <div className="text-center mb-20">
-          <span className="inline-block px-4 py-2 bg-blue-500/10 rounded-full text-blue-500 dark:text-blue-400 font-semibold text-sm mb-4 backdrop-blur">
+          <span className="inline-block px-4 py-2 bg-blue-500/10 rounded-full text-blue-500 dark:text-blue-400 font-semibold text-sm mb-4 backdrop-blur transition-all duration-300 hover:bg-blue-500/20 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/20 cursor-pointer">
             📚 EDUCATION & QUALIFICATIONS
           </span>
-          <h2 className="text-4xl sm:text-5xl font-bold mb-6">
-            My <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600">Learning Journey</span>
+          <h2 className="text-4xl sm:text-5xl font-bold mb-6 transition-all duration-300 hover:scale-105 hover:text-blue-600 dark:hover:text-blue-400">
+            My <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600 hover:from-purple-600 hover:to-blue-500 transition-all duration-500">Learning Journey</span>
           </h2>
-          <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto transition-all duration-300 hover:text-gray-700 dark:hover:text-gray-300 hover:scale-105">
             Continuous learning and professional development through formal education and certifications
           </p>
         </div>
@@ -116,7 +116,7 @@ const Education = () => {
           {educationData.map((edu, idx) => (
             <div
               key={idx}
-              className="group relative bg-white dark:bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-200 dark:border-gray-700/50 hover:border-blue-500/50 dark:hover:border-blue-400/50 transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/10"
+              className="group relative bg-white dark:bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-200 dark:border-gray-700/50 hover:border-blue-500/50 dark:hover:border-blue-400/50 transition-all duration-300 hover:shadow-2xl hover:shadow-blue-500/20 hover:scale-105 hover:-translate-y-1 hover:bg-gradient-to-br hover:from-blue-50/50 dark:hover:from-blue-900/20 hover:to-purple-50/50 dark:hover:to-purple-900/20"
             >
               {/* Corner Accent */}
               <div className="absolute top-0 right-0 w-1 h-12 bg-gradient-to-b from-purple-500/20 to-transparent rounded-l" />
@@ -147,7 +147,7 @@ const Education = () => {
                 {edu.skills.map((skill, i) => (
                   <span
                     key={i}
-                    className="px-3 py-1 bg-blue-500/10 dark:bg-blue-500/20 text-blue-600 dark:text-blue-300 rounded-full text-xs font-medium"
+                    className="px-3 py-1 bg-blue-500/10 dark:bg-blue-500/20 text-blue-600 dark:text-blue-300 rounded-full text-xs font-medium transition-all duration-300 hover:bg-blue-500/30 dark:hover:bg-blue-500/40 hover:shadow-lg hover:shadow-blue-400/30 hover:scale-110 cursor-pointer"
                   >
                     {skill}
                   </span>
@@ -171,7 +171,7 @@ const Education = () => {
                 href={cert.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group bg-gradient-to-br from-white to-gray-50 dark:from-gray-800/50 dark:to-gray-900/30 backdrop-blur-sm rounded-xl p-6 border border-gray-200 dark:border-gray-700/50 hover:shadow-lg hover:shadow-blue-500/20 transition-all duration-300 text-center cursor-pointer hover:border-blue-500/50 dark:hover:border-blue-400/50"
+                className="group bg-gradient-to-br from-white to-gray-50 dark:from-gray-800/50 dark:to-gray-900/30 backdrop-blur-sm rounded-xl p-6 border border-gray-200 dark:border-gray-700/50 hover:shadow-2xl hover:shadow-blue-500/30 transition-all duration-300 text-center cursor-pointer hover:border-blue-500/50 dark:hover:border-blue-400/50 hover:scale-110 hover:-translate-y-2 hover:bg-gradient-to-br hover:from-blue-50/80 dark:hover:from-blue-900/30 hover:to-purple-50/80 dark:hover:to-purple-900/30"
               >
                 <div className="text-4xl mb-3 transform group-hover:scale-125 transition-transform">{cert.badge}</div>
                 <h4 className="font-bold text-lg mb-1 group-hover:text-blue-500 dark:group-hover:text-blue-400 transition-colors">{cert.title}</h4>
