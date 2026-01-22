@@ -84,14 +84,14 @@ const Experience = () => {
           {experiences.map((exp, index) => (
             <div
               key={index}
-              className="group bg-white dark:bg-gray-900 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-200/50 dark:border-gray-700/50 hover:-translate-y-1"
+              className="group bg-white dark:bg-white-900 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-xl transition-all duration-300 border border-red-200/50 dark:border-red-700/50 hover:-translate-y-1"
             >
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
                 <h3 className="text-xl font-semibold flex items-center gap-2">
                   <FaCode className="text-blue-500" />
                   {exp.role}
                 </h3>
-                <span className="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 mt-2 sm:mt-0">
+                <span className="flex items-center gap-2 text-sm text-black dark:text-gray-400 mt-2 sm:mt-0">
                   <FaCalendarAlt /> {exp.duration}
                 </span>
               </div>
