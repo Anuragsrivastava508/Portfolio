@@ -148,7 +148,7 @@ const Projects = () => {
             ))}
              
           </motion.div>
-         <Footer />
+        
         </section>
         
     );
