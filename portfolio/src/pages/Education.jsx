@@ -91,7 +91,7 @@ const Education = () => {
   return (
     <section
       id="education-section"
-      className="py-24 bg-gradient-to-br from-white via-gray-50 to-gray-100 dark:from-black dark:via-gray-900 dark:to-gray-800 text-gray-800 dark:text-gray-100 relative overflow-hidden"
+      className="py-24 bg-gradient-to-br from-black via-black to-black dark:from-black dark:via-gray-900 dark:to-gray-800 text-gray-800 dark:text-gray-100 relative overflow-hidden"
     >
       {/* Background Effects */}
       <div className="absolute top-0 right-0 w-72 h-72 bg-blue-400/10 rounded-full blur-3xl -mr-36 -mt-36" />
@@ -160,8 +160,8 @@ const Education = () => {
         {/* Certifications Section */}
         <div className="mt-16">
           <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold mb-2">Professional Certifications</h3>
-            <p className="text-gray-600 dark:text-gray-400">Industry-recognized credentials</p>
+            <h3 className="text-3xl font-bold mb-2 text-white">Professional Certifications</h3>
+            <p className="text-white dark:text-white">Industry-recognized credentials</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
