@@ -97,7 +97,7 @@ const Footer = () => {
 
         {/* Bottom Section */}
         <div className="flex flex-col sm:flex-row justify-between items-center text-sm text-gray-400">
-          <p>&copy; {currentYear} Your Name. All rights reserved.</p>
+          <p>&copy; {currentYear} Anurag Srivastava. All rights reserved.</p>
           <p className="mt-4 sm:mt-0">
             Designed with <span className="text-red-500">❤</span> using React & Tailwind CSS
           </p>

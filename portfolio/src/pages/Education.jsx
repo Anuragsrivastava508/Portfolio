@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from '../components/Footer'
 import { FaGraduationCap, FaBook, FaTrophy, FaExternalLinkAlt } from 'react-icons/fa'
 
 const Education = () => {
@@ -91,7 +92,7 @@ const Education = () => {
   return (
     <section
       id="education-section"
-      className="py-24 bg-gradient-to-br from-black via-black to-black dark:from-black dark:via-gray-900 dark:to-gray-800 text-gray-800 dark:text-gray-100 relative overflow-hidden"
+      className="py-24  bg-gray-800 text-gray-900 dark:to-gray-800  dark:text-gray-100 relative overflow-hidden"
     >
       {/* Background Effects */}
       <div className="absolute top-0 right-0 w-72 h-72 bg-blue-400/10 rounded-full blur-3xl -mr-36 -mt-36" />
@@ -104,7 +105,7 @@ const Education = () => {
             📚 EDUCATION & QUALIFICATIONS
           </span>
           <h2 className="text-4xl sm:text-5xl font-bold mb-6 transition-all duration-300 hover:scale-105 hover:text-blue-600 dark:hover:text-blue-400">
-            My <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600 hover:from-purple-600 hover:to-blue-500 transition-all duration-500">Learning Journey</span>
+        My <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600 hover:from-purple-600 hover:to-blue-500 transition-all duration-500">Learning Journey</span>
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto transition-all duration-300 hover:text-gray-700 dark:hover:text-gray-300 hover:scale-105">
             Continuous learning and professional development through formal education and certifications
@@ -184,8 +185,11 @@ const Education = () => {
             ))}
           </div>
         </div>
+          
       </div>
+      <Footer/>
     </section>
+  
   )
 };
 
