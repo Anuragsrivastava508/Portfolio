@@ -20,7 +20,7 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: 'Aneja Transport',
+      title: 'Chat application',
       description: 'Real-time chat application built with MERN stack and Socket.IO | Live on Render',
       image: 'https://via.placeholder.com/400x300',
       tech: ['React.js', 'Tailwind CSS', 'Node.js', 'Material UI'],
@@ -67,7 +67,7 @@ const Projects = () => {
   return (
         <section
           id="projects-section"
-          className="py-24 bg-gradient-to-br from-white via-gray-50 to-gray-100 dark:from-black dark:via-gray-900 dark:to-gray-800 text-gray-800 dark:text-gray-100 relative overflow-hidden"
+          className="py-24 bg-gradient-to-br from-black via-black to-black dark:from-black dark:via-gray-900 dark:to-gray-800 text-gray-800 dark:text-gray-100 relative overflow-hidden"
         >
           {/* Background Blur */}
           <div className="absolute top-0 right-0 w-72 h-72 bg-blue-400/10 rounded-full blur-3xl -mr-36 -mt-36" />
@@ -83,7 +83,7 @@ const Projects = () => {
               <h2 className="text-4xl sm:text-5xl font-bold mb-6 transition-all duration-300 hover:scale-105 hover:text-blue-600 dark:hover:text-blue-400">
                  My <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600 hover:from-purple-600 hover:to-blue-500 transition-all duration-500">Project section</span>
                </h2>
-               <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto transition-all duration-300 hover:text-gray-700 dark:hover:text-gray-300 hover:scale-105">
+               <p className="text-lg text-white dark:text-gray-400 max-w-2xl mx-auto transition-all duration-300 hover:text-blue-500 dark:hover:text-blue-600 hover:scale-105">
                A showcase of my recent work and development projects, highlighting my skills and learning journey.
                </p>
             </div>
