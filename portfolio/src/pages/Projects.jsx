@@ -1,5 +1,6 @@
 
 import React from 'react'
+import Footer from '../components/Footer';
 import { motion } from 'framer-motion'
 import { FaBriefcase, FaCode, FaCalendarAlt } from "react-icons/fa";
 
@@ -144,8 +145,11 @@ const Projects = () => {
                 </div>
               </motion.div>
             ))}
+             
           </motion.div>
+         <Footer />
         </section>
+        
     );
 };
 
