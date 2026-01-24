@@ -107,9 +107,9 @@ const Education = () => {
           <h2 className="text-4xl sm:text-5xl font-bold mb-6 transition-all duration-300 hover:scale-105 hover:text-blue-600 dark:hover:text-blue-400">
         My <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600 hover:from-purple-600 hover:to-blue-500 transition-all duration-500">Learning Journey</span>
           </h2>
-          <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto transition-all duration-300 hover:text-gray-700 dark:hover:text-gray-300 hover:scale-105">
+          {/* <p className="text-lg text-white dark:text-blue-500 max-w-2xl mx-auto transition-all duration-300 hover:text-blue-500 dark:hover:text-blue-800 hover:scale-105">
             Continuous learning and professional development through formal education and certifications
-          </p>
+          </p> */}
         </div>
 
         {/* Education Cards */}

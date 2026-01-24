@@ -37,7 +37,7 @@ const Projects = () => {
       image: '',
       tech: ['React.js', 'Tailwind CSS', 'Node.js', 'Material UI'],
       githubUrl: 'https://github.com/Anuragsrivastava508/', 
-      liveUrl: "",
+      liveUrl: "https://equipay-b550e.web.app/",
       category: ' Project',
       date: '2025',
     },
@@ -58,7 +58,7 @@ const Projects = () => {
       title: 'Portfolio-app',
       description: 'Chef Kitchen is a modern and responsive web application built for food lovers to explore chefs and their recipes. The project focuses on clean UI, smooth navigation, and an enjoyable user experience',
       image: 'chief-kitchen-app.',
-      tech: ['HTML5,CSS3,JAVASCRIPT,Martial UI'],
+      tech: ['Html',"CSS","Javascript", 'Tailwind CSS', 'Git', 'Bootstrap'],
       githubUrl: '', 
       liveUrl: 'https://anuragsrivastava508.github.io/anurag.portfolio/',
       category: ' Project',
@@ -68,7 +68,8 @@ const Projects = () => {
   return (
         <section
           id="projects-section"
-          className="py-24 bg-gradient-to-br from-black via-black to-black dark:from-black dark:via-gray-900 dark:to-gray-800 text-gray-800 dark:text-gray-100 relative overflow-hidden"
+          className="py-24 bg-gray-800 text-gray-900 dark:fr
+          m-black dark:via-gray-900 dark:to-gray-800 dark:text-gray-100 relative overflow-hidden"
         >
           {/* Background Blur */}
           <div className="absolute top-0 right-0 w-72 h-72 bg-blue-400/10 rounded-full blur-3xl -mr-36 -mt-36" />
@@ -84,9 +85,9 @@ const Projects = () => {
               <h2 className="text-4xl sm:text-5xl font-bold mb-6 transition-all duration-300 hover:scale-105 hover:text-blue-600 dark:hover:text-blue-400">
                  My <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600 hover:from-purple-600 hover:to-blue-500 transition-all duration-500">Project section</span>
                </h2>
-               <p className="text-lg text-white dark:text-gray-400 max-w-2xl mx-auto transition-all duration-300 hover:text-blue-500 dark:hover:text-blue-600 hover:scale-105">
+               {/* <p className="text-lg text-white dark:text-gray-400 max-w-2xl mx-auto transition-all duration-300 hover:text-blue-500 dark:hover:text-blue-600 hover:scale-105">
                A showcase of my recent work and development projects, highlighting my skills and learning journey.
-               </p>
+               </p> */}
             </div>
        </div>    
        

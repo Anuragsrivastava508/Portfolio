@@ -20,6 +20,7 @@ const Navbar = () => {
         <div className="hidden md:flex space-x-6 text-gray-300">
           <Link to="/" className="hover:text-blue-400">Home</Link>
           <Link to="/education" className="hover:text-blue-400">Education</Link>
+           <Link onClick={() => setIsOpen(false)} to="/education" className="block">Skill</Link>
            <Link to="/experience" className="hover:text-blue-400">Experience</Link>
           <Link to="/projects" className="hover:text-blue-400">Projects</Link>
           <Link to="/contact" className="hover:text-blue-400">Contact</Link>
@@ -39,6 +40,7 @@ const Navbar = () => {
         <div className="md:hidden bg-gray-900 px-4 pb-4 space-y-2 text-gray-300">
           <Link onClick={() => setIsOpen(false)} to="/" className="block">Home</Link>
           <Link onClick={() => setIsOpen(false)} to="/education" className="block">Education</Link>
+           <Link onClick={() => setIsOpen(false)} to="/education" className="block">Skill</Link>
           <Link onClick={() => setIsOpen(false)} to="/projects" className="block">Projects</Link>
           <Link onClick={() => setIsOpen(false)} to="/experience" className="block">Experience</Link>
           <Link onClick={() => setIsOpen(false)} to="/contact" className="block">Contact</Link>

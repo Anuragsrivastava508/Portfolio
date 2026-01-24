@@ -7,6 +7,7 @@ import Education from "./pages/Education";
 import Projects from "./pages/Projects";
 import Experience from "./pages/Experience";
 import Contact from "./pages/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
+    {/* <Footer/> */}
     </BrowserRouter>
   );
 }
