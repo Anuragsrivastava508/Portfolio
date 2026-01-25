@@ -96,12 +96,11 @@ const Footer = () => {
         <div className="border-t border-gray-700 my-8"></div>
 
         {/* Bottom Section */}
-        <div className="flex flex-col sm:flex-row justify-between items-center text-sm text-gray-400">
-          <p>&copy; {currentYear} Anurag Srivastava. All rights reserved.</p>
-          <p className="mt-4 sm:mt-0">
-            Designed with <span className="text-red-500">❤</span> using React & Tailwind CSS
-          </p>
-        </div>
+        {/* <div className=" text-center h-8 text-sm text-gray-400">
+          <p>&copy; {currentYear} Anurag Srivastava. All rights reserved
+             Designed with <span className="text-red-500">❤</span> using React & Tailwind CSS.</p>
+          
+        </div> */}
       </div>
     </footer>
   );

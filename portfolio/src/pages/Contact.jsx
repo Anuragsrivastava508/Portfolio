@@ -30,7 +30,7 @@ const Contact = () => {
   return (
     <div className="flex"> <section
       id="contact-section"
-      className="py-24  bg-gray-900 text-gray-200 via-gray-50 to-gray-100 dark:from-black dark:via-gray-900 dark:to-gray-800 dark:text-gray-100 relative overflow-hidden"
+      className="py-24  bg-gray-800 text-gray-200 via-gray-50 to-gray-100 dark:from-black dark:via-gray-900 dark:to-gray-800 dark:text-gray-100 relative overflow-hidden"
     >
       {/* Background Effects */}
       <div className="absolute top-0 right-0 w-72 h-72 bg-primary/5 rounded-full blur-3xl -mr-36 -mt-36" />
@@ -45,8 +45,8 @@ const Contact = () => {
          <h2 className="text-4xl sm:text-5xl font-bold mb-6 transition-all duration-300 hover:scale-105 hover:text-blue-600 dark:hover:text-blue-400">
             Let's <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600 hover:from-purple-600 hover:to-blue-500 transition-all duration-500">Contact us</span>
           </h2>
-          <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto transition-all duration-300 hover:text-gray-700 dark:hover:text-gray-300 hover:scale-105">
-            Have a question or want to work together? Drop me a message anytime!
+           <p className="text-lg text-white dark:text-blue-500 max-w-2xl mx-auto transition-all duration-300 hover:text-blue-500 dark:hover:text-blue-800 hover:scale-105">
+           Have a question or want to work together? Drop me a message anytime!
           </p>
         </div>
 
@@ -100,7 +100,7 @@ const Contact = () => {
                       {item.content}
                     </a>
                   ) : (
-                    <p className="text-gray-600 dark:text-gray-400">
+                    <p className="text-gray-300 dark:text-gray-400">
                       {item.content}
                     </p>
                   )}

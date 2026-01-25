@@ -8,6 +8,7 @@ import Projects from "./pages/Projects";
 import Experience from "./pages/Experience";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
+import Skill from "./pages/Skill";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/education" element={<Education />} />
+          <Route path="/skill" element={<Skill />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/experience" element={<Experience />} />
           <Route path="/contact" element={<Contact />} />

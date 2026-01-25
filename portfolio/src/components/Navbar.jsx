@@ -20,7 +20,7 @@ const Navbar = () => {
         <div className="hidden md:flex space-x-6 text-gray-300">
           <Link to="/" className="hover:text-blue-400">Home</Link>
           <Link to="/education" className="hover:text-blue-400">Education</Link>
-           <Link onClick={() => setIsOpen(false)} to="/education" className="block">Skill</Link>
+           <Link onClick={() => setIsOpen(false)} to="/skill" className="block">Skill</Link>
            <Link to="/experience" className="hover:text-blue-400">Experience</Link>
           <Link to="/projects" className="hover:text-blue-400">Projects</Link>
           <Link to="/contact" className="hover:text-blue-400">Contact</Link>
