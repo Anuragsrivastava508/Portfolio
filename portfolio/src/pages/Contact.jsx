@@ -28,9 +28,9 @@ const Contact = () => {
   };
 
   return (
-    <div> <section
+    <div className="flex"> <section
       id="contact-section"
-      className="py-24  bg-gray-900 text-gray-300 via-gray-50 to-gray-100 dark:from-black dark:via-gray-900 dark:to-gray-800 dark:text-gray-100 relative overflow-hidden"
+      className="py-24  bg-gray-900 text-gray-200 via-gray-50 to-gray-100 dark:from-black dark:via-gray-900 dark:to-gray-800 dark:text-gray-100 relative overflow-hidden"
     >
       {/* Background Effects */}
       <div className="absolute top-0 right-0 w-72 h-72 bg-primary/5 rounded-full blur-3xl -mr-36 -mt-36" />
