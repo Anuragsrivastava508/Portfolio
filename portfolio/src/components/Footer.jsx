@@ -47,7 +47,7 @@ const Footer = () => {
           {/* About Section */}
           <div>
             <h3 className="text-xl font-bold text-white mb-4">Portfolio</h3>
-            <p className="text-sm text-gray-400 leading-relaxed">
+            <p className="text-sm text-gray-400 hover:text-blue-500 content-start  leading-relaxed">
               A passionate developer showcasing projects and experiences. Let's build something amazing together.
             </p>
           </div>
@@ -60,7 +60,7 @@ const Footer = () => {
                 <li key={link.label}>
                   <a
                     href={link.href}
-                    className="text-gray-400 hover:text-white transition duration-300"
+                    className="text-gray-400 hover:text-blue-500 transition duration-300"
                   >
                     {link.label}
                   </a>
@@ -96,11 +96,11 @@ const Footer = () => {
         <div className="border-t border-gray-700 my-8"></div>
 
         {/* Bottom Section */}
-        {/* <div className=" text-center h-8 text-sm text-gray-400">
+        <div className=" text-center h-8 text-sm text-gray-400">
           <p>&copy; {currentYear} Anurag Srivastava. All rights reserved
              Designed with <span className="text-red-500">❤</span> using React & Tailwind CSS.</p>
           
-        </div> */}
+        </div>
       </div>
     </footer>
   );
