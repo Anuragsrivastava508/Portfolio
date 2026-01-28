@@ -26,6 +26,44 @@ const Contact = () => {
       [e.target.name]: e.target.value,
     });
   };
+  const contactInfo =[
+     {
+      icon: FaEnvelope,
+      label: 'Email',
+      value: 'anuragsrivastava8874@gmail.com',
+      href: 'mailto:anuragsrivastava8874@gmail.com',
+    },
+    {
+      icon: FaPhone,
+      label: 'Phone',
+      value: '91 9335267246',
+      href: 'tel:+9335267246',
+    },
+    {
+      icon: FaLocationDot,
+      label: 'location',
+      value: 'Varanasi,Uttar Pardesh ,India',
+      href: '',
+    },
+  ]
+  const SocialLinks =[
+                  {
+                    icon: <FaLinkedinIn />,
+                    link: "https://linkedin.com/in/anuragshrivastava06",
+                    color: "bg-blue-500/20 hover:bg-blue-500",
+                  },
+                  {
+                    icon: <FaGithub />,
+                    link: "https://github.com/anuragsrivastava508",
+                    color: "bg-gray-500/20 hover:bg-gray-700",
+                  },
+                  {
+                    icon: <FaEnvelope />,
+                    link: "mailto:anuragsrivastava8874@gmail.com",
+                    color: "bg-red-500/20 hover:bg-red-500",
+                  },
+                  
+                ]
 
   return (
     <div className="flex"> <section
@@ -52,65 +90,54 @@ const Contact = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           {/* LEFT SIDE */}
-          <div className="space-y-8">
-            {/* Info Blocks */}
-            {[
-              {
-                icon: <FaLocationDot />,
-                title: "Varanasi",
-                content: "C 23 / 74 KABIR CHOURA VARNASI UTTAR PARDEH INDIA",
-              },
-              {
-                icon: <FaEnvelope />,
-                title: "Email",
-                link: "mailto:anuragsrivastava8874@gmail.com",
-                content: "anuragsrivastava8874@gmail.com",
-              },
-              {
-                icon: <FaPhone />,
-                title: "Phone",
-                link: "tel:+919336267246",
-                content: "+91 9336267246",
-              },
-              {
-                icon: <FaClock />,
-                title: "Working Hours",
-                content: "Mon – Fri: 9:00 AM – 10:00 PM",
-              },
-              {
-                icon: <FaGlobe />,
-                title: "Website",
-                link: "https://www.chefskitchen.com",
-                content: "www.chefskitchen.com",
-              },
-            ].map((item, index) => (
-              <div key={index} className="flex gap-6">
-                <div className="h-12 w-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary text-lg">
-                  {item.icon}
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold">{item.title}</h3>
-                  {item.link ? (
-                    <a
-                      href={item.link}
-                      className="text-primary hover:underline"
-                      target="_blank"
-                      rel="noreferrer"
+           {/* Contact Information */}
+            <div
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.4 }}
+              className="space-y-8"
+            >
+              {/* Contact Details */}
+              <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 lg:p-8">
+                <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
+                  Contact Information
+                </h2>
+                <div className="space-y-4">
+                  {contactInfo.map((info, index) => (
+                    <div
+                      key={info.label}
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ delay: 0.6 + index * 0.1 }}
+                      className="flex items-center p-4 bg-gray-50 dark:bg-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors duration-200"
                     >
-                      {item.content}
-                    </a>
-                  ) : (
-                    <p className="text-gray-300 dark:text-gray-400">
-                      {item.content}
-                    </p>
-                  )}
+                      <div className="w-12 h-12 bg-gradient-to-r from-blue-100 to-purple-100 dark:from-blue-900/30 dark:to-purple-900/30 rounded-full flex items-center justify-center mr-4">
+                        <info.icon className="h-6 w-6 text-blue-600 dark:text-blue-400" />
+                      </div>
+                      <div>
+                        <p className="text-sm text-gray-500 dark:text-gray-400">
+                          {info.label}
+                        </p>
+                        <a
+                          href={info.href}
+                          className="text-gray-900 dark:text-white font-medium hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          {info.value}
+                        </a>
+                      </div>
+                    </div>
+                  ))}
                 </div>
+                
               </div>
-            ))}
 
             {/* Social Links */}
-            <div className="pt-8 border-t border-gray-200 dark:border-gray-700">
-              <p className="font-semibold mb-4">Follow Us</p>
+            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 lg:p-8">
+              <p className=" text-black font-semibold mb-4">Follow Us</p>
+              <p className="text-black dark:text-gray-300 mb-4">
+                Follow me on social media for updates on my latest projects and tech insights.</p>
               <div className="flex gap-4">
                 {[
                   {
@@ -128,16 +155,7 @@ const Contact = () => {
                     link: "mailto:anuragsrivastava8874@gmail.com",
                     color: "bg-red-500/20 hover:bg-red-500",
                   },
-                  {
-                    icon: <FaTwitter />,
-                    link: "https://twitter.com",
-                    color: "bg-sky-400/20 hover:bg-sky-400",
-                  },
-                  {
-                    icon: <FaInstagram />,
-                    link: "https://instagram.com",
-                    color: "bg-pink-500/20 hover:bg-pink-500",
-                  },
+                  
                 ].map((social, i) => (
                   <a
                     key={i}
@@ -151,37 +169,102 @@ const Contact = () => {
                 ))}
               </div>
             </div>
-          </div>
+            {/* Resume */}
+           {/* Resume */}
+            <div className="bg-white border border-blue-500 dark:bg-gray-800 rounded-xl shadow-lg p-6 lg:p-8">
+               <p className="text-black font-semibold mb-2">
+                   Download My Resume
+                </p>
+
+                  <p className="text-black dark:text-gray-300 mb-4 ">
+                     Get a detailed overview of my professional experience, technical skills,
+                       and educational background.
+                    </p>
+
+                    <a
+                    href="/resume.pdf"
+                    download
+                     className="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-medium
+                       text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition"
+                       >
+                        <button type="button" className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-200 transform hover:scale-105"
+                >  Download Resume </button>
+                        
+                  </a>
+                    </div>
+
+                        </div>
 
           {/* RIGHT SIDE FORM */}
-          <form className="bg-white dark:bg-gray-800/50 p-10 rounded-2xl shadow-xl space-y-6">
-            <input
-              type="text"
-              name="name"
-              placeholder="Full Name"
-              value={formData.name}
-              onChange={handleChange}
-              className="w-full px-5 py-3 rounded-xl bg-gray-100 dark:bg-gray-900 focus:ring-2 focus:ring-primary outline-none"
-            />
+               
+                <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 lg:p-8">
+                   <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
+                 Send Me a Message
+                </h2>
+              <form className="bg-white dark:bg-gray-800/50 p-10 rounded-2xl shadow-xl space-y-6">
+      
+           <div>
+                    <label
+                      htmlFor="Fullname"
+                      className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
+                    >
+                     Full Name 
+                    </label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      value={formData.name}
+                      onChange={handleChange}
+                      className="w-full px-5 py-3 rounded-xl bg-gray-100 dark:bg-gray-900 focus:ring-2 focus:ring-primary outline-none resize-none"
+                      placeholder="Enter your name"
+                    />
+                  </div>
+          
+                <div>
+                   <label htmlFor="emil"
+                   className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                    Email
+                   </label>
+                    <input type="email"
+                     name="email" 
+                     id="email" 
+                     placeholder="Email.Address"
+                       value={formData.email}
+                          onChange={handleChange}
+                           className="w-full px-5 py-3 rounded-xl bg-gray-100 dark:bg-gray-900 focus:ring-2 focus:ring-primary outline-none resize-none"
+                      />
+                </div>
 
-            <input
-              type="email"
-              name="email"
-              placeholder="Email Address"
-              value={formData.email}
-              onChange={handleChange}
-              className="w-full px-5 py-3 rounded-xl bg-gray-100 dark:bg-gray-900 focus:ring-2 focus:ring-primary outline-none"
-            />
-
-            <textarea
-              name="message"
-              rows="5"
-              placeholder="Your Message"
-              value={formData.message}
-              onChange={handleChange}
-              className="w-full px-5 py-3 rounded-xl bg-gray-100 dark:bg-gray-900 focus:ring-2 focus:ring-primary outline-none resize-none"
-            />
-
+                 <div>
+                    <label
+                      htmlFor="subject"
+                      className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
+                    >
+                      Subject
+                    </label>
+                    <input
+                      type="text"
+                      id="subject"
+                      name="subject"
+                      value={formData.subject}
+                      onChange={handleChange}
+                      className="w-full px-5 py-3 rounded-xl bg-gray-100 dark:bg-gray-900 focus:ring-2 focus:ring-primary outline-none resize-none"
+                      placeholder="What's this about?"
+                    />
+                  </div>
+                  <div>
+                    <label htmlFor="your message"
+                    className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Your Message</label>
+                    <textarea name="Message" 
+                    id="message" 
+                    rows="10"
+                    placeholder="Your message "
+                     value={formData.message}
+                      onChange={handleChange}
+                    className="w-full px-5 py-3 rounded-xl bg-gray-100 dark:bg-gray-900 focus:ring-2 focus:ring-primary outline-none resize-none"></textarea>
+                  </div>
+          
             <button
               type="submit"
               className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-xl flex items-center justify-center gap-2 transition-all"
@@ -192,12 +275,13 @@ const Contact = () => {
             <p className="text-xs text-center text-gray-500">
               I'll get back to you within 24 hours.
             </p>
-          </form>
+              </form>
+                </div>
+          
         </div>
       </div>
-    </section>
 
-   
+    </section>
 
     </div>
     
