@@ -7,6 +7,7 @@ import {
   Linkedin,
   Mail,
   Instagram,
+  GraduationCap ,
   Code,
   User,
 } from "lucide-react";
@@ -131,9 +132,44 @@ const Home = () => {
 
             <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 max-w-4xl mx-auto text-center">
               <p className="text-gray-600 dark:text-gray-400 text-lg">
-                I’m a Full Stack Web Developer who loves building scalable and
-                clean web applications.
+            I’m a passionate Frontend and Backend Developer, currently learning and building projects with the MERN stack. I enjoy creating responsive user interfaces on the frontend and developing efficient server-side logic on the backend. I’m focused on improving my skills through hands-on projects and continuously learning modern web technologies.
               </p>
+            </div>
+          </motion.div>
+
+          
+          {/* Education Section */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 1.8 }}
+            className="mb-20"
+          >
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4 flex items-center justify-center">
+                <GraduationCap className="h-8 w-8 mr-3 text-blue-600 dark:text-blue-400" />
+                Education
+              </h2>
+            </div>
+            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8">
+              <div className="text-center">
+                <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
+                  Bachelor of Computer Applications (BCA)
+                </h3>
+                <p className="text-blue-600 dark:text-blue-400 font-semibold text-lg mb-4">
+                 Mahatma Gandhi Kashi Vidyapeeth University{" "}
+                  {/* Replace with actual university */}
+                </p>
+                <div className="inline-flex items-center px-4 py-2 bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300 rounded-full text-sm font-medium mb-4">
+                  <GraduationCap className="h-4 w-4 mr-2" />
+                  Graduated
+                </div>
+                <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+                  Comprehensive program covering computer science fundamentals,
+                  programming languages, software development, database
+                  management, and web technologies.
+                </p>
+              </div>
             </div>
           </motion.div>
 
@@ -170,7 +206,25 @@ const Home = () => {
               <a href="mailto:test@gmail.com"><Mail /></a>
             </div>
           </div>
-
+ <div className="max-w-4xl mx-auto">
+              <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed mb-8">
+                I design and develop digital experiences that create real impact. Whether it’s a startup building its first product or a growing business upgrading its online presence, I bring ideas to life with clean code, modern design, and a strong focus on user experience.
+              </p>
+              <div className="flex flex-wrap justify-center gap-6 text-sm text-gray-500 dark:text-gray-400">
+                <div className="flex items-center">
+                  <div className="w-3 h-3 bg-blue-500 rounded-full mr-2"></div>
+                  1+ Years Experience
+                </div>
+                <div className="flex items-center">
+                  <div className="w-3 h-3 bg-green-500 rounded-full mr-2"></div>
+                  20+ Projects Completed
+                </div>
+                <div className="flex items-center">
+                  <div className="w-3 h-3 bg-purple-500 rounded-full mr-2"></div>
+                  100% Client Satisfaction
+                </div>
+              </div>
+              </div>
         </div>
       </div>
 
