@@ -200,10 +200,10 @@ const Home = () => {
           <div className="text-center  text-white  mb-20">
             <h3 className="text-2xl font-bold mb-6">Let's Connect</h3>
             <div className="flex justify-center gap-6">
-              <a href="https://github.com/" target="_blank"><Github /></a>
-              <a href="https://linkedin.com/" target="_blank"><Linkedin /></a>
-              <a href="https://instagram.com/" target="_blank"><Instagram /></a>
-              <a href="mailto:test@gmail.com"><Mail /></a>
+              <a href="https://github.com/anuragsrivastava508" target="_blank"><Github /></a>
+              <a href="https://linkedin.com/in/anuragshrivastava06" target="_blank"><Linkedin /></a>
+              <a href="https://Anuragsrivastava006.com/" target="_blank"><Instagram /></a>
+              <a href="mailto:anuragsrivastava8874@gmail.com"><Mail /></a>
             </div>
           </div>
   <div className="max-w-4xl mx-auto">

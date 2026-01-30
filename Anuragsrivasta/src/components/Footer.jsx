@@ -8,13 +8,13 @@ const Footer = () => {
     {
       name: 'GitHub',
       icon: FaGithub,
-      url: 'https://github.com',
+      url: "https://github.com/anuragsrivastava508",
       color: 'hover:text-gray-600 dark:hover:text-gray-400'
     },
     {
       name: 'LinkedIn',
       icon: FaLinkedin,
-      url: 'https://linkedin.com',
+      url: 'https://linkedin.com/in/anuragshrivastava06',
       color: 'hover:text-blue-600 dark:hover:text-blue-400'
     },
     {
@@ -26,7 +26,7 @@ const Footer = () => {
     {
       name: 'Email',
       icon: FaEnvelope,
-      url: 'mailto:your.email@example.com',
+      url: 'mailto:anuragsrivastava8874@gmail.com',
       color: 'hover:text-red-500 dark:hover:text-red-400'
     }
   ];
