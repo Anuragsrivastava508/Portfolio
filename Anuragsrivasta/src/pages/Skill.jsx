@@ -95,11 +95,32 @@ const skillCategories = [
                         />
                       </div>
                     </motion.div>
+                    
                   ))}
                 </div>
+                
               </motion.div>
+              
             ))}
+            
           </div>
+       
+         {/* Learning Philosophy */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 1.2 }}
+            className="text-center mt-16"
+          >
+            <h3 className="text-2xl font-bold text-gray-400 dark:text-white mb-4">
+              Continuous Learning
+            </h3>
+            <p className="text-gray-400 dark:text-gray-400 max-w-2xl mx-auto leading-relaxed">
+              Technology evolves rapidly, and I'm committed to staying current with the latest trends, 
+              frameworks, and best practices. I believe in learning by doing and constantly challenging 
+              myself with new projects and technologies.
+            </p>
+          </motion.div>
     </section>
   )
 }

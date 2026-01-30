@@ -98,7 +98,7 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className=" text-center h-8 text-sm text-gray-400">
           <p>&copy; {currentYear} Anurag Srivastava. All rights reserved
-             Designed with <span className="text-red-500">❤</span> using React & Tailwind CSS.</p>
+             Designed with <span className="text-red-500">❤</span></p>
           
         </div>
       </div>

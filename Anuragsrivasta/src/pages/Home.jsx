@@ -32,7 +32,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-900 dark:to-purple-900/20 pt-16">
+      <div  className="py-24  bg-gray-800 text-gray-900 dark:to-gray-800  dark:text-gray-100 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
           {/* Hero Section */}
@@ -45,31 +45,31 @@ const Home = () => {
             {/* Left */}
             <div className="lg:w-2/3 lg:pr-12 mb-12 lg:mb-0">
               <motion.div variants={itemVariants} className="mb-6">
-                <span className="px-4 py-2 bg-gradient-to-r from-blue-100 to-purple-100 dark:from-blue-900/30 dark:to-purple-900/30 text-blue-800 dark:text-blue-200 rounded-full text-sm font-medium">
+                <span className="inline-block px-4 py-2 bg-blue-500/10 rounded-full text-blue-500 dark:text-blue-400 font-semibold text-sm mb-4 backdrop-blur transition-all duration-300 hover:bg-blue-500/20 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/20 cursor-pointer">
                   👋 Welcome to my portfolio
                 </span>
               </motion.div>
 
               <motion.h1
                 variants={itemVariants}
-                className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-6"
+                className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-200 dark:text-white mb-6"
               >
                 Hi, I'm{" "}
                 <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                  Yash Johari
+                  Anurag Srivastava
                 </span>
               </motion.h1>
 
               <motion.h2
                 variants={itemVariants}
-                className="text-xl sm:text-2xl text-gray-600 dark:text-gray-300 mb-6"
+                className="text-xl sm:text-2xl text-gray-300 dark:text-gray-300 mb-6"
               >
-                Full Stack Developer
+                Full Stack Developer || MERN 
               </motion.h2>
 
               <motion.p
                 variants={itemVariants}
-                className="text-lg text-gray-600 dark:text-gray-400 mb-10 leading-relaxed"
+                className="text-lg text-gray-300 dark:text-gray-400 mb-10 leading-relaxed"
               >
                 Passionate Full Stack Developer specializing in React.js,
                 Node.js, and modern web technologies.
@@ -90,11 +90,11 @@ const Home = () => {
                 <button
                   onClick={() =>
                     window.open(
-                      "https://drive.google.com/uc?id=1_7aDywPK39EUDc1_AJNk7uS15c6DfqY0&export=download",
+                      "",
                       "_blank"
                     )
                   }
-                  className="inline-flex items-center px-6 py-3 border-2 border-gray-300 dark:border-gray-600 rounded-lg hover:border-blue-500 hover:text-blue-600 transition"
+                  className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg hover:scale-105 transition"
                 >
                   <Download className="mr-2 h-5 w-5" />
                   Download Resume
@@ -124,7 +124,7 @@ const Home = () => {
             className="mb-20"
           >
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold flex justify-center items-center gap-2">
+              <h2 className="text-3xl text-white font-bold flex justify-center items-center gap-2">
                 <User className="text-blue-600" />
                 About Me
               </h2>
@@ -146,7 +146,7 @@ const Home = () => {
             className="mb-20"
           >
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4 flex items-center justify-center">
+              <h2 className="text-3xl   font-bold text-gray-200 dark:text-white mb-4 flex items-center justify-center">
                 <GraduationCap className="h-8 w-8 mr-3 text-blue-600 dark:text-blue-400" />
                 Education
               </h2>
@@ -176,7 +176,7 @@ const Home = () => {
           {/* Skills */}
           <div className="mb-20">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold flex justify-center items-center gap-2">
+              <h2 className="text-3xl text-white  font-bold flex justify-center items-center gap-2">
                 <Code className="text-blue-600" />
                 Core Skills
               </h2>
@@ -197,7 +197,7 @@ const Home = () => {
           </div>
 
           {/* Social */}
-          <div className="text-center mb-20">
+          <div className="text-center  text-white  mb-20">
             <h3 className="text-2xl font-bold mb-6">Let's Connect</h3>
             <div className="flex justify-center gap-6">
               <a href="https://github.com/" target="_blank"><Github /></a>
@@ -206,8 +206,8 @@ const Home = () => {
               <a href="mailto:test@gmail.com"><Mail /></a>
             </div>
           </div>
- <div className="max-w-4xl mx-auto">
-              <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed mb-8">
+  <div className="max-w-4xl mx-auto">
+              <p className="text-gray-300 dark:text-gray-400 text-lg leading-relaxed mb-8">
                 I design and develop digital experiences that create real impact. Whether it’s a startup building its first product or a growing business upgrading its online presence, I bring ideas to life with clean code, modern design, and a strong focus on user experience.
               </p>
               <div className="flex flex-wrap justify-center gap-6 text-sm text-gray-500 dark:text-gray-400">
