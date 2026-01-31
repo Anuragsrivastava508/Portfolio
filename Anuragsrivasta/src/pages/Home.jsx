@@ -15,6 +15,8 @@ import { motion } from "framer-motion";
 import Footer from "../components/Footer.jsx";
 
 // ✅ Image import (path apne project ke hisaab se)
+import profileImage from "../assets/Anurag.JPG";
+
 
 const Home = () => {
   const containerVariants = {
@@ -103,19 +105,19 @@ const Home = () => {
             </div>
 
             {/* Right */}
-            {/* <motion.div variants={itemVariants} className="lg:w-1/3">
+            <motion.div variants={itemVariants} className="lg:w-1/3">
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full blur-3xl opacity-20 animate-pulse"></div>
                 <div className="relative bg-gradient-to-r from-blue-100 to-purple-100 dark:from-blue-900/20 dark:to-purple-900/20 rounded-full p-8">
                   <img
-                    src={yashJohariImage}
-                    alt="Yash Johari"
+                    src={profileImage}
+                    alt="anurag srivastava"
                     className="w-48 h-48 lg:w-64 lg:h-64 rounded-full object-cover mx-auto shadow-2xl"
                   />
                 </div>
               </div>
-            </motion.div> */}
-          </motion.div>
+            </motion.div>
+          </motion.div> 
 
           {/* About */}
           <motion.div
